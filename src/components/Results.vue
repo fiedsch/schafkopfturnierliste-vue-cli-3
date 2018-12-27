@@ -7,7 +7,7 @@
                 <th></th>
                 <th></th>
                 <th :colspan="2 + (detailsInErfassung ? 2 : 0)">Gesamt</th>
-                <th v-for="i in runden" :colspan="2 + (detailsInErfassung ? 2 : 0)">Runde {{ i }}</th>
+                <th :key="'runde'+i" v-for="i in runden" :colspan="2 + (detailsInErfassung ? 2 : 0)">Runde {{ i }}</th>
             </tr>
             <tr>
                 <th>Platz</th>
