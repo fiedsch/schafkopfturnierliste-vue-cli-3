@@ -16,7 +16,7 @@
 </template>
 
 <script>
-    import TlRundenerfassung from '@/components/TlRundenerfassung.vue'
+    import TlRundenerfassung from '@/components/TlRundenerfassung'
 
     export default {
         name: 'TlSpielereingabe',

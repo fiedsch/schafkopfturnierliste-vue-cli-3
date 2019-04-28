@@ -8,9 +8,9 @@
 </template>
 
 <script>
-    import TlSuche from '@/components/TlSuche.vue'
-    import TlSpielerhinzufuegen from '@/components/TlSpielerhinzufuegen.vue'
-    import TlEingabe from '@/components/TlEingabe.vue'
+    import TlSuche from '@/components/TlSuche'
+    import TlSpielerhinzufuegen from '@/components/TlSpielerhinzufuegen'
+    import TlEingabe from '@/components/TlEingabe'
     export default {
         name: 'MainContent',
         components: {

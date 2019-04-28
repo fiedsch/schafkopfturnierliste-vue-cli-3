@@ -23,8 +23,8 @@
 </template>
 
 <script>
-    import TlSpielereingabe from '@/components/TlSpielereingabe.vue'
-    import TlSummenzeile from '@/components/TlSummenzeile.vue'
+    import TlSpielereingabe from '@/components/TlSpielereingabe'
+    import TlSummenzeile from '@/components/TlSummenzeile'
 
     export default {
         name: 'TlEingabe',
