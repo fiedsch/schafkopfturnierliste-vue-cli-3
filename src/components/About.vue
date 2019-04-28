@@ -6,7 +6,7 @@
             die die Verwaltung der Daten bei einem Schafkopfturnier einfacher machen soll &mdash; Daten
             müssen nicht zwingend in Excel leben <code>;-)</code>.
         </p>
-        <p><a href="https://andreas-fieger.de/impressum.html">Impressum/wer hat's gemacht?</a></p>
+        <p><a href="https://www.andreas-fieger.de/impressum.html">Impressum/wer hat's gemacht?</a></p>
     </div>
 </template>
 
