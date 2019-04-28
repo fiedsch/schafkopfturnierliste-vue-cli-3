@@ -14,7 +14,7 @@
             <tr v-if="spieler.length==0">
                 <td :colspan="runden+1">Keine Spiele gefunden</td>
             </tr>
-            <tl-spielereingabe v-for="s in spieler" :spieler="s" :key="spieler.id"></tl-spielereingabe>
+            <tl-spielereingabe v-for="s in spieler" :spieler="s" :key="s.id"></tl-spielereingabe>
             <tl-summenzeile :spieler="spieler"></tl-summenzeile>
             </tbody>
         </table>
