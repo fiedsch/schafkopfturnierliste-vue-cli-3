@@ -14,6 +14,11 @@
 </script>
 
 <style scoped>
+    @media print {
+        .menu {
+            display: none;
+        }
+    }
     ul.menu {
         list-style-type: none;
         padding: 0;
