@@ -2,7 +2,7 @@
     <td class="runde">
         <ul :class="{ full: detailsInErfassung, short: !detailsInErfassung }">
             <li>
-                <label for="tisch"">Tisch</label>
+                <label for="tisch">Tisch</label>
                 <input id="tisch" type="text" v-model.number.prevent="data.tisch" @change="update">
             </li>
             <li>
