@@ -69,12 +69,16 @@
                 result = result.sort(this.compareSpieler)
                 // Rang berechnen
                 let runningRang = 1
+                let rangSkip = 0
                 result[0].rang = runningRang
                 for (let i=1; i<result.length; i++) {
                     if (this.compareSpieler(result[i-1], result[i]) < 0) {
+                        runningRang += rangSkip
                         result[i].rang = ++runningRang
+                        rangSkip = 0
                     } else {
                         result[i].rang = runningRang
+                        ++rangSkip
                     }
                 }
                 return result
