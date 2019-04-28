@@ -2,24 +2,24 @@
     <td class="runde">
         <ul :class="{ full: detailsInErfassung, short: !detailsInErfassung }">
             <li>
-                <label for="tisch">Tisch</label>
-                <input id="tisch" type="text" v-model.number="data.tisch" @change="update">
+                <label for="tisch"">Tisch</label>
+                <input id="tisch" type="text" v-model.number.prevent="data.tisch" @change="update">
             </li>
             <li>
                 <label for="punkte">Punkte</label>
-                <input id="punkte" type="text" v-model.number="data.punkte" @change="update">
+                <input id="punkte" type="text" v-model.number.prevent="data.punkte" @change="update">
             </li>
             <li>
                 <label for="soli">Soli</label>
-                <input id="soli" type="text" v-model.number="data.soli" @change="update">
+                <input id="soli" type="text" v-model.number.prevent="data.soli" @change="update">
             </li>
             <li v-if="detailsInErfassung">
                 <label for="soligewonnen">Soli gewonen</label>
-                <input id="soligewonnen" type="text" v-model.number="data.soligewonnen" @change="update">
+                <input id="soligewonnen" type="text" v-model.number.prevent="data.soligewonnen" @change="update">
             </li>
             <li v-if="detailsInErfassung">
                 <label for="spielegewonnen">Spiele gewonnen</label>
-                <input id="spielegewonnen" type="text" v-model.number="data.spielegewonnen" @change="update">
+                <input id="spielegewonnen" type="text" v-model.number.prevent="data.spielegewonnen" @change="update">
             </li>
         </ul>
     </td>
