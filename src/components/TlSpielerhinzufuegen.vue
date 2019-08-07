@@ -29,6 +29,10 @@
         methods: {
             addSpieler() {
                 this.$store.dispatch('addSpieler')
+                setTimeout(() => {
+                    let el = document.getElementById('name_'+this.$store.state.maxSpielerId); // .focus()
+                    el.focus()
+                }, 50)
             },
             toggle() {
                 this.visible = !this.visible
