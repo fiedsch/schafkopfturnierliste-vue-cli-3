@@ -6,7 +6,7 @@
         </h2>
         <transition name="bounce">
             <div v-if="visible">
-                <button v-if="!sucheaktiv" @click.prevent="addSpieler">neuen Spieler hinzufügen</button>
+                <button v-if="!sucheaktiv" @click.prevent="addSpieler" accesskey="s">neuen Spieler hinzufügen</button>
                 <div v-else>Bitte Suchfilter leeren</div>
             </div>
         </transition>
