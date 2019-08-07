@@ -1,6 +1,6 @@
 <template>
     <tr>
-        <td><input :tabindex="spieler.id" type="text" id="name" v-model="name" @blur="update" placeholder="Namen eingeben"></td>
+        <td><input :tabindex="spieler.id" type="text" :id="'name_'+spieler.id" v-model="name" @blur="update" placeholder="Namen eingeben"></td>
         <td><input type="checkbox" id="bezahlt" v-model="bezahlt" @change   ="update"></td>
         <template v-for="i in runden">
             <tl-rundenerfassung
